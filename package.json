@@ -1,0 +1,111 @@
+{
+  "name": "reshape-cli",
+  "version": "0.0.0",
+  "description": "CLI for reshape",
+  "license": "MIT",
+  "repository": "GitScrum/reshape-cli",
+  "author": {
+    "name": "Ivan Demidov",
+    "email": "Scrum@list.ru",
+    "url": "https://twitter.com/Scrum_"
+  },
+  "bin": {
+    "reshape": "cli.js"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "commitmsg": "conventional-changelog-lint -e",
+    "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"chore(changelog): Update changelog v`npm view reshape-cli version`\"",
+    "patch": "np patch --any-branch",
+    "minor": "np minor --any-branch",
+    "major": "np major --any-branch",
+    "lintjs": "eslint cli.js example.js test/*.js",
+    "lintmd": "eslint --ext md --rule indent: [error, 4] .",
+    "pretest": "clinton && npm run lintjs && npm run lintmd",
+    "test": "nyc ava",
+    "testen": "testen -n -- ava",
+    "update": "updtr && ava-codemods --force"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "reshape",
+    "reshape-runner",
+    "cli"
+  ],
+  "dependencies": {
+    "globby": "^6.1.0",
+    "post-load-plugins": "0.0.13",
+    "reshape": "^0.4.1",
+    "yargs": "^6.6.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "ava-codemods": "^0.3.0",
+    "babel-eslint": "^7.1.1",
+    "clinton": "^0.11.0",
+    "conventional-changelog-cli": "^1.2.0",
+    "conventional-changelog-lint": "^1.1.0",
+    "coveralls": "^2.11.15",
+    "cpy": "^5.0.0",
+    "eslint": "^3.14.0",
+    "eslint-config-xo": "^0.17.0",
+    "eslint-formatter-pretty": "^1.1.0",
+    "eslint-plugin-ava": "^4.0.1",
+    "eslint-plugin-babel": "^4.0.1",
+    "eslint-plugin-markdown": "^1.0.0-beta.3",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-require-path-exists": "^1.1.5",
+    "eslint-plugin-xo": "^1.0.0",
+    "execa": "^0.6.0",
+    "husky": "^0.13.0",
+    "i": "^0.3.5",
+    "np": "^2.12.0",
+    "npm": "^4.2.0",
+    "nyc": "^10.1.2",
+    "path-exists": "^3.0.0",
+    "read-pkg": "^2.0.0",
+    "reshape-custom-elements": "^0.1.0",
+    "tempfile": "^1.1.1",
+    "testen": "^1.8.2",
+    "updtr": "^0.2.3"
+  },
+  "testen": {
+    "node": [
+      "6",
+      "7"
+    ]
+  },
+  "eslintConfig": {
+    "format": "node_modules/eslint-formatter-pretty",
+    "parser": "babel-eslint",
+    "plugins": [
+      "ava",
+      "xo",
+      "babel",
+      "require-path-exists",
+      "markdown"
+    ],
+    "extends": [
+      "xo",
+      "plugin:xo/recommended",
+      "plugin:ava/recommended"
+    ]
+  },
+  "clinton": {
+    "ignores": [
+      "test/**",
+      "tmp/**",
+      "lib/**",
+      "*.{html,jpg}"
+    ],
+    "rules": {
+      "xo": [
+        "off"
+      ]
+    }
+  }
+}
