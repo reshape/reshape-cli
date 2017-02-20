@@ -1,7 +1,7 @@
 # reshape-cli
 > Simple CLI for [reshape][reshape-url]
 
-[![node][node-image]][node-url][![NPM version][npm-image]][npm-url][![Trasiv Build Status][travis-image]][travis-url][![AppVeyor Build Status][appveyor-img]][appveyor][![Coveralls Status][coveralls-image]][coveralls-url][![Dependency Status][depstat-image]][depstat-url][![Standard Code Style][style]][style-url]
+[![node](https://img.shields.io/node/v/reshape-cli.svg?maxAge=2592000&style=flat-square)]()[![NPM version][npm-image]][npm-url][![Travis Build Status](https://img.shields.io/travis/GitScrum/reshape-cli.svg?style=flat-square&label=unix)](https://travis-ci.org/GitScrum/reshape-cli)[![AppVeyor Build Status][appveyor-img]][appveyor][![Coveralls Status][coveralls-image]][coveralls-url][![Dependency Status][depstat-image]][depstat-url][![Standard Code Style][style]][style-url]
 
 ## Install
 
@@ -143,9 +143,6 @@ $ reshape -i inputFolder/*.html -r
 ### License [MIT](license)
 
 [reshape-url]: http://github.com/reshape/reshape
-
-[node-url]: ""
-[node-image]: https://img.shields.io/node/v/reshape-cli.svg?maxAge=2592000&style=flat-square
 
 [npm-url]: https://npmjs.org/package/reshape-cli
 [npm-image]: http://img.shields.io/npm/v/reshape-cli.svg?style=flat-square
