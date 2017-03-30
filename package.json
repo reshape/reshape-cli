@@ -40,7 +40,7 @@
     "globby": "^6.1.0",
     "post-load-plugins": "0.0.13",
     "reshape": "^0.4.1",
-    "yargs": "^6.6.0"
+    "yargs": "^7.0.2"
   },
   "devDependencies": {
     "ava": "*",
@@ -52,7 +52,7 @@
     "coveralls": "^2.11.15",
     "cpy": "^5.0.0",
     "eslint": "^3.14.0",
-    "eslint-config-xo": "^0.17.0",
+    "eslint-config-xo": "^0.18.1",
     "eslint-formatter-pretty": "^1.1.0",
     "eslint-plugin-ava": "^4.0.1",
     "eslint-plugin-babel": "^4.0.1",
@@ -69,8 +69,8 @@
     "path-exists": "^3.0.0",
     "read-pkg": "^2.0.0",
     "reshape-custom-elements": "^0.1.0",
-    "tempfile": "^1.1.1",
-    "testen": "^1.8.2",
+    "tempfile": "^2.0.0",
+    "testen": "^2.2.0",
     "updtr": "^0.2.3"
   },
   "testen": {
