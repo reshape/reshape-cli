@@ -71,7 +71,7 @@
     "reshape-custom-elements": "^0.1.0",
     "tempfile": "^1.1.1",
     "testen": "^1.8.2",
-    "updtr": "^0.2.3"
+    "updtr": "^1.0.0"
   },
   "testen": {
     "node": [
